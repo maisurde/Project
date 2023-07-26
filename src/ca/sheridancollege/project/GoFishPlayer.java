@@ -6,58 +6,72 @@ package ca.sheridancollege.project;
 
 /**
  *
- * @author User
+* @author Denish Maisuriya
+
  */
-// GoFishPlayer.java
+
 
 import java.util.ArrayList;
 
-public class GoFishPlayer extends Player {
+public class GoFishPlayer extends Player 
+{
 
     private GroupOfCards hand;
     private int score;
 
-    public GoFishPlayer(String name) {
+    public GoFishPlayer(String name) 
+    {
         super(name);
         hand = new GroupOfCards(0);
         score = 0;
     }
 
-    public GroupOfCards getHand() {
+    public GroupOfCards getHand() 
+    {
         return hand;
     }
 
-    public int getScore() {
+    public int getScore() 
+    {
         return score;
     }
 
-    public void setScore(int score) {
+    public void setScore(int score) 
+    {
         this.score = score;
     }
 
     @Override
-    public void play() {
-        // The logic for a player's turn in the Go Fish game will be implemented in the GoFishGame class
+    public void play() 
+    {
+        
     }
 
-    public boolean hasCardWithRank(String rank) {
-        for (Card card : hand.getCards()) {
-            if (card.getRank().equalsIgnoreCase(rank)) {
+    public boolean hasCardWithRank(String rank) 
+    {
+        for (Card card : hand.getCards()) 
+        {
+            if (card.getRank().equalsIgnoreCase(rank)) 
+            {
                 return true;
             }
         }
         return false;
     }
 
-    public void transferCards(GoFishPlayer otherPlayer, String rank) {
+    public void transferCards(GoFishPlayer otherPlayer, String rank) 
+    {
         ArrayList<Card> cardsToTransfer = new ArrayList<>();
-        for (Card card : hand.getCards()) {
-            if (card.getRank().equalsIgnoreCase(rank)) {
+        for (Card card : hand.getCards()) 
+        {
+            if (card.getRank().equalsIgnoreCase(rank)) 
+            {
                 cardsToTransfer.add(card);
             }
         }
 
-        for (Card card : cardsToTransfer) {
+        for (Card card : cardsToTransfer) 
+        {
             hand.getCards().remove(card);
         }
 

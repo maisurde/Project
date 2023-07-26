@@ -6,39 +6,33 @@
 package ca.sheridancollege.project;
 
 /**
- * A class to be used as the base Card class for the project. Must be general enough to be instantiated for any Card
- * game. Students wishing to add to the code should remember to add themselves as a modifier.
- *
- * @author dancye
+ * @author Denish Maisuriya
  */
-/**
- * A class to represent a playing card.
- */
-// Card.java
-
-/**
- * A class to represent a playing card.
- */
-public class Card {
+public class Card 
+{
 
     private final String rank;
     private final String suit;
 
-    public Card(String rank, String suit) {
+    public Card(String rank, String suit) 
+    {
         this.rank = rank;
         this.suit = suit;
     }
 
-    public String getRank() {
+    public String getRank() 
+    {
         return rank;
     }
 
-    public String getSuit() {
+    public String getSuit() 
+    {
         return suit;
     }
 
     @Override
-    public String toString() {
+    public String toString() 
+    {
         return rank + " of " + suit;
     }
 }

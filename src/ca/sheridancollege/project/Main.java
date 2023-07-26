@@ -5,13 +5,13 @@
 package ca.sheridancollege.project;
 
 /**
- *
- * @author User
+ * @author Denish Maisuriya
  */
-// Main.java
-// Main.java
-public class Main {
-    public static void main(String[] args) {
+
+public class Main 
+{
+    public static void main(String[] args) 
+    {
         GoFishGame game = new GoFishGame("Go Fish Game");
 
         game.getPlayers().add(new GoFishPlayer("Player 1"));
