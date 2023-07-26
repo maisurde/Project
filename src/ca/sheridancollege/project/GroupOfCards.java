@@ -5,8 +5,9 @@
  */
 package ca.sheridancollege.project;
 
+// GroupOfCards.java
+
 import java.util.ArrayList;
-import java.util.Collections;
 
 /**
  * A class that represents a group of cards.
@@ -26,7 +27,7 @@ public class GroupOfCards {
     }
 
     public void shuffle() {
-        Collections.shuffle(cards);
+        // Implement shuffle logic here
     }
 
     public int getSize() {

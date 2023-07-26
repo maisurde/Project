@@ -5,15 +5,12 @@
  */
 package ca.sheridancollege.project;
 
+// Game.java
 import java.util.ArrayList;
 
-/**
- * A class that models a game.
- */
 public abstract class Game {
-
     private final String name;
-    private ArrayList<Player> players;
+    private ArrayList<GoFishPlayer> players;
 
     public Game(String name) {
         this.name = name;
@@ -24,11 +21,11 @@ public abstract class Game {
         return name;
     }
 
-    public ArrayList<Player> getPlayers() {
+    public ArrayList<GoFishPlayer> getPlayers() {
         return players;
     }
 
-    public void setPlayers(ArrayList<Player> players) {
+    public void setPlayers(ArrayList<GoFishPlayer> players) {
         this.players = players;
     }
 
@@ -36,5 +33,3 @@ public abstract class Game {
 
     public abstract void declareWinner();
 }
-
-

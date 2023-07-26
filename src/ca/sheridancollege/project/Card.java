@@ -14,6 +14,11 @@ package ca.sheridancollege.project;
 /**
  * A class to represent a playing card.
  */
+// Card.java
+
+/**
+ * A class to represent a playing card.
+ */
 public class Card {
 
     private final String rank;
@@ -37,6 +42,5 @@ public class Card {
         return rank + " of " + suit;
     }
 }
-
 
 
