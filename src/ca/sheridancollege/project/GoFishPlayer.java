@@ -10,7 +10,6 @@ package ca.sheridancollege.project;
 
  */
 
-
 import java.util.ArrayList;
 
 public class GoFishPlayer extends Player 

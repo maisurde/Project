@@ -6,7 +6,7 @@
 
 package ca.sheridancollege.project;
 
-// Game.java
+
 import java.util.ArrayList;
 
 public abstract class Game 

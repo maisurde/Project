@@ -7,7 +7,6 @@ package ca.sheridancollege.project;
 /**
  * @author Denish Maisuriya
  */
-
 public abstract class Player 
 {
     private String name;

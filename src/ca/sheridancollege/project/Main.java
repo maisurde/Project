@@ -7,7 +7,6 @@ package ca.sheridancollege.project;
 /**
  * @author Denish Maisuriya
  */
-
 public class Main 
 {
     public static void main(String[] args) 
